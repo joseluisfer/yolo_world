@@ -11,7 +11,7 @@ print("Iniciando carga del modelo YOLOE-26x-seg en GPU...")
 try:
     # Forzamos el uso de GPU si está disponible
     device = "0" if torch.cuda.is_available() else "cpu"
-    model = YOLOE("yoloe-26x-seg.pt").to(device)
+    model = YOLOE("yolov8x-worldv2.pt").to(device)
     print(f"✅ Modelo listo en dispositivo: {device}")
 except Exception as e:
     print(f"❌ Error cargando el modelo: {e}")
