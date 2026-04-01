@@ -20,7 +20,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Descargar el modelo v8.4.0
-RUN wget -q https://github.com/ultralytics/assets/releases/download/v8.4.0/yoloe-26x-seg.pt -O yoloe-26x-seg.pt
+RUN wget -q https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8x-worldv2.pt
 
 COPY handler.py .
 
