@@ -1,10 +1,11 @@
 import runpod
 import torch
-from ultralytics import YOLOE
+from ultralytics import YOLO
 import numpy as np
 from PIL import Image
 import io
 import base64
+
 
 # 1. CARGA DEL MODELO (Fuera del handler para evitar recargar en cada petición)
 print("Iniciando carga del modelo yolov8x-worldv2.pt en GPU...")
