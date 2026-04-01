@@ -7,7 +7,7 @@ import io
 import base64
 
 # 1. CARGA DEL MODELO (Fuera del handler para evitar recargar en cada petición)
-print("Iniciando carga del modelo YOLOE-26x-seg en GPU...")
+print("Iniciando carga del modelo yolov8x-worldv2.pt en GPU...")
 try:
     # Forzamos el uso de GPU si está disponible
     device = "0" if torch.cuda.is_available() else "cpu"
